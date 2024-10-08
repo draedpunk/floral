@@ -1,0 +1,631 @@
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;500&family=Atkinson+Hyperlegible:wght@400;700&family=Inconsolata:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap"rel="stylesheet">
+
+<title>floral</title>
+
+<!--- CHANGE SONG COLORS ETC --->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<!-------MUSIC PLAYER BY GLENTHEMES------->
+<script src="//static.tumblr.com/gtjt4bo/QRmphdsdv/glenplayer02.js"></script>
+
+<script src="https://kit.fontawesome.com/8ef97d3168.js" crossorigin="anonymous"></script>
+
+<div class="all">
+<div class="bubble bubble-bottom-left">
+
+<div id="bub"> <marquee>i'm that little asian boy..</marquee> </div> <!-- text bubble -->
+
+</div>
+
+<div id="cont">
+<img class=inside src="./img/doll.jpg">
+<div id="cont2"><div class="grid-item"></div>
+
+<div class="grid-item"> <mark>baekradpass・online!</mark>
+<br></br>pamela
+</div>
+
+</div>
+
+<div id="cont3">
+<div class="grid-item">
+
+<div class="scroll" id="ones">
+᛫ ⦁ <span style="color: #da568a;">✿</span> <strong>gosto mt:</strong> <u>codar</u>, filmes e conteúdos sci-fi, inglês, algumas piratarias e <a href="https://www.asianfanfics.com/story/view/1180100/children-of-the-storm-tradu----o-pt-br"onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()" target="_blank">filhos da tempestade</a> <3 <a href=" https://archiveofourown.org/works/6978742"onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()" target="_blank">(cots)</a>.
+</div>
+<div id="glenplayer02">
+<div class="music-controls" onclick="songstart();" onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()">
+
+<div class="playy"><i class="fas fa-play"></i></div>
+<div class="pausee"><i class="fas fa-pause"></i></div>
+</div>
+<div class="sonata">
+<div class="labeltext"> binu..mp3 <img src="https://64.media.tumblr.com/tumblr_ll7wpyHlj71qi6qow.gif"></div>
+</div>
+</div><!--end music player-->
+<audio id="tune" src="https://dl.dropbox.com/s/7j7r47o5yfhf7i7/01.%20%EB%B9%84%EB%88%84.mp3"></audio>
+</div>
+
+<div class="grid-item">
+
+<div id="name">PAMeLA!</div> <!-- name -->
+
+<div class="scroll" id="twos"> ou só <strong>pam</strong> 22 anos, recife/PE ᛫ ⦁ <span style="color: #da568a;">✿</span> <span style="color: #625344;"><u>ib crditem</u></span>.
+</div> <!-- info 2 -->
+
+<center><a href="https://twitter.com/baekradpass"onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"><i class="fas fa-arrow-left"></i></a>
+
+<a href="https://youtube.com/c/baekhyun"onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"><i class="fas fa-heart"></i></a>
+
+<a href="https://www.last.fm/user/shyshyshit"onmouseover="mouseoversound.playclip()" onclick="clicksound.playclip()"><i class="fas fa-arrow-right"></i></a>
+</center>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<style>
+
+@font-face {
+font-family: handy;
+src: url(https://dl.dropbox.com/s/ga9hf4idu3egjb5/handy00.ttf);
+}
+
+@font-face {
+font-family: billo;
+src: url(https://dl.dropbox.com/s/klv8tmajlqrb2xz/BILLO___.TTF);
+}
+
+@font-face {
+font-family:chick;
+src:url(https://dl.dropbox.com/s/wrt1sab5vv6r25n/CHICK___.TTF);
+}
+
+::-webkit-scrollbar { /*invisible scrollbar*/
+width: 0;
+background: transparent;
+}
+::-webkit-scrollbar-thumb {
+background: #FF0000;
+}
+
+::-moz-selection { /*HIGHLIGHT COLOR*/
+background-color: #FFF0D900;
+color: #DC6E90;
+}
+
+::selection {
+background-color: #FFF0D900;
+color: #DC6E90;
+}
+
+a:hover {
+color: #deacc5;
+}
+
+a {
+color: #DC6E90;
+text-decoration: none;
+font-weight: bold;
+}
+
+* { padding: 0; margin: 0; box-sizing: border-box; }
+
+html { /*dont modify*/
+height: 100vh;
+width: 100vw;
+font-size: 16px;
+position: fixed;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+body { /* bg colors */
+background: rgb(253,199,209);
+background: linear-gradient(159deg, rgba(253,199,209,1) 26%, rgba(255,234,234,1) 83%);
+}
+
+.all { /*main container*/
+margin: auto;
+width: 19em;
+height: 19em;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: justify;
+}
+
+#cont { /*dont modify unless stated*/
+-webkit-filter: drop-shadow(0px 0px 1px #FFFAF4);
+border: 2px solid #FFFAF4;
+width: 19em;
+height: 19em;
+background: rgb(235,181,191);
+background: radial-gradient(circle, rgba(235,181,191,1) 60%, rgba(254,241,227,1) 100%); /*bg of the container */
+border-radius: 100%;
+transition: 1s ease-in-out;
+position: relative;
+overflow: hidden;
+
+}
+
+#cont:hover {
+border-radius: 6px;
+height: 19em;
+}
+
+.inside { /*dont modify*/
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0em;
+left:0;
+z-index: 99;
+border-radius: 100%;
+object-fit: cover;
+transition: 1s ease-in-out;
+transition-delay: 0.6s;
+border: 1px solid transparent;
+}
+
+#cont:hover .inside { /*dont modify*/
+width: 25%;
+height: 25%;
+top: 15px;
+left: 10px;
+-webkit-filter: drop-shadow(0px 0px 1px #FFFAF4);
+border: 2px solid #FFFAF4;
+}
+
+.grid-item { /*dont modify*/
+padding: 10px;
+height:6em;
+top: 10px;
+position: relative;
+}
+
+mark { /*dont modify (white bg of the username online thing*/
+background: #FFFAF4;
+color: #503E2F;
+border-radius: 20px;
+padding-left: 22px;
+top: 11px;
+left: -25px;
+position: relative;
+padding-right: 4px;
+}
+
+#cont2 { /*dont modify*/
+position: relative;
+display: grid;
+grid-template-columns: auto 73%;
+font-family: handy; /*font of the username thing + name */
+color: #503E2F;
+font-size: 11.5px;
+padding: 0px;
+}
+
+#cont3 { /*dont modify*/
+position: relative;
+display: grid;
+grid-template-columns: 52% 48%;
+top: 10px;
+}
+
+.scroll {
+width: 100%;
+background-color: #FFFAF465;
+border: 2px solid #FFFAF4;
+border-radius: 3px;
+overflow: hidden;
+padding: 3px;
+font-family: 'MuseoModerno', 'Archivo'; sans-serif;
+font-size: 13.5px;
+color: #503E2F;
+line-height: 1.2;
+}
+
+#ones { /*dont modify*/
+height: 11.3em;
+}
+
+#twos { /*dont modify*/
+height: 6.5em;
+width: 110%;
+bottom: 1.45em;
+left: -13px;
+position: relative;
+}
+
+#name { /*name css (isita)*/
+font-size: 2.2em;
+text-align: left;
+background: rgb(245,152,189);
+background: linear-gradient(180deg, rgba(245,152,189,1) 38%, rgba(254,255,240,1) 73%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+-webkit-text-stroke-width: 0.6px;
+-webkit-text-stroke-color: #da568a;
+-webkit-filter: drop-shadow(0px 0px 2px #FFC7DD);
+letter-spacing: 1px;
+line-height: 1.4;
+bottom: .4em;
+left: -13px;
+position: relative;
+margin-bottom: 0px;
+font-family: chick, billo;
+}
+
+.fa-arrow-left , .fa-heart , .fa-arrow-right { /*css of the icons (twitter, heart & headphones)*/
+color: #FFFAF4;
+margin:5px;
+text-decoration: none;
+position: relative;
+bottom: .7em;
+left: -7px;
+right: 7px;
+}
+
+.fa-arrow-left:hover , .fa-heart:hover , .fa-arrow-right:hover {
+background: rgb(255,143,188);
+background: linear-gradient(180deg, rgba(255,143,188,1) 25%, rgba(252,165,199,1) 40%, rgba(255,255,255,1) 75%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+-webkit-text-stroke: 0.6px #FFFAF4;
+}
+
+.fa-arrow-left , .fa-heart , .fa-arrow-right a:link {
+text-decoration: none;
+color: #FFFAF4;
+}
+
+.fas fa-heart, .fas fa-arrow-right, .fas fa-arrow-left a:link {
+text-decoration: none;
+color: #FFFAF4;
+}
+
+.bubble { /*dont modify*/
+filter: drop-shadow(1px 1px 0 #fff) drop-shadow(-1px 0px 0 #fff) drop-shadow(0 1px 0 #fff) drop-shadow(0 -1px 0 #fff) ;
+transform: rotate(10deg);
+position: absolute;
+top: -1%;
+right: -3%;
+line-height: 11px;
+width: 35%;
+background: rgb(255,250,244);
+background: linear-gradient(0deg, rgba(255,250,244,1) 0%, rgba(255, 224, 224,1) 36%, rgba(255, 224, 224,1) 62%, rgba(255,250,244,1) 100%);
+z-index: 1000;
+border-radius: 40px;
+padding: 5px;
+text-align: center;
+color: #503E2F;
+font-family: handy;
+font-size: 11px;
+}
+
+.bubble-bottom-left:before { /*dont modify*/
+content: "";
+font-family: deliosa;
+-webkit-transform: scaleX(1);
+transform: scaleX(1);
+width: 0px;
+height: 0px;
+position: absolute;
+border-left: 11px solid #FFF8F4;
+border-right: 8px solid transparent;
+border-top: 8px solid #FFF8F4;
+border-bottom: 10px solid transparent;
+left: 30px;
+bottom: -18px;
+}
+
+#glenplayer02 {
+position:absolute;
+margin-top:1em;
+left:8px;
+margin-left:4px;
+display: inline;
+z-index:90;
+}
+#glenplayer02 a {
+text-decoration:none;
+}
+
+#glenplayer02 > div {
+align-self:center;
+-webkit-align-self:center;
+}
+
+.music-controls {
+user-select:none;
+-webkit-user-select:none;
+width:15px;
+font-size: 15px;
+cursor:pointer;
+}
+
+.playy, .pausee {
+background: -webkit-linear-gradient(-90deg, #F598BD 40%, #FFF 65%, #FFF 95%);
+-webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-text-stroke: 0.5px #F598BD; -webkit-filter: drop-shadow(0px 0px 2px #FFC7DD);
+}
+
+.pausee {
+display:none;
+}
+
+.sonata {
+margin-left:5px;
+color:#341B0B;
+/* color of music note symbol */
+}
+
+.labeltext {
+margin-left: 1.455em;
+margin-top: -1.355em;
+text-align: center;
+color: #503E2F;
+font-family: handy;
+font-size: 12px; /* color of song title */
+}
+</style>
+
+<style type="text/css">* {cursor: url(https://cur.cursors-4u.net/nature/nat-4/nat346.ani), url(https://cur.cursors-4u.net/nature/nat-4/nat346.png), auto !important;}</style>
+
+<script type="text/javascript">
+// <![CDATA[
+var colours=new Array("#ebb5bf", "#ebb5bf", "#ebb5bf", "#ebb5bf", "#FFFFEB"); // colours for top, right, bottom and left borders and background of bubbles
+var bubbles=66; // how many bubbles are moving at any given time
+var over_or_under="over"; // set to "over" for bubbles to always be on top, or "under" to allow them to float behind other objects
+
+/****************************
+* JavaScript Bubble Bath *
+*(c)2010-13 mf2fm web-design*
+* http://www.mf2fm.com/rv *
+* DON'T EDIT BELOW THIS BOX *
+****************************/
+
+var swide=800;
+var shigh=600;
+var bubb=new Array();
+var bubbx=new Array();
+var bubby=new Array();
+var bubbs=new Array();
+var boddie;
+var ie_version=(navigator.appVersion.indexOf("MSIE")!=-1)?parseFloat(navigator.appVersion.split("MSIE")[1]):false;
+
+function addLoadEvent(funky) {
+var oldonload=window.onload;
+if (typeof(oldonload)!='function') window.onload=funky;
+else window.onload=function() {
+if (oldonload) oldonload();
+funky();
+}
+}
+
+addLoadEvent(bubba);
+
+function bubba() { if (document.getElementById) {
+var i, rats, div;
+boddie=document.createElement("div");
+boddie.style.position="fixed";
+boddie.style.top="0px";
+boddie.style.left="0px";
+boddie.style.overflow="visible";
+boddie.style.width="1px";
+boddie.style.height="1px";
+boddie.style.backgroundColor="transparent";
+boddie.style.zIndex="0";
+document.body.appendChild(boddie);
+set_width();
+for (i=0; i<bubbles; i++) {
+rats=createDiv("3px", "3px");
+
+div=createDiv("auto", "auto");
+rats.appendChild(div);
+div=div.style;
+div.top="1px";
+div.left="0px";
+div.bottom="1px";
+div.right="0px";
+div.borderLeft="1px solid "+colours[3];
+div.borderRight="1px solid "+colours[1];
+
+div=createDiv("auto", "auto");
+rats.appendChild(div);
+div=div.style;
+div.top="0px";
+div.left="1px";
+div.right="1px";
+div.bottom="0px"
+div.borderTop="1px solid "+colours[0];
+div.borderBottom="1px solid "+colours[2];
+
+div=createDiv("auto", "auto");
+rats.appendChild(div);
+div=div.style;
+div.left="1px";
+div.right="1px";
+div.bottom="1px";
+div.top="1px";
+div.backgroundColor=colours[4];
+if (ie_version && ie_version<10) div.filter="alpha(opacity=50)";
+else div.opacity=0.5;
+
+boddie.appendChild(rats);
+bubb[i]=rats.style;
+bubb[i].zIndex=(over_or_under=="over")?"1001":"0";
+}
+bubble();
+}}
+
+function bubble() {
+var c;
+for (c=0; c<bubbles; c++) if (!bubby[c] && Math.random()<0.333) {
+bubb[c].left=(bubbx[c]=Math.floor(swide/6+Math.random()*swide/1.5)-10)+"px";
+bubb[c].top=(bubby[c]=shigh)+"px";
+bubb[c].width="3px";
+bubb[c].height="3px"
+bubb[c].visibility="visible";
+bubbs[c]=3;
+break;
+}
+for (c=0; c<bubbles; c++) if (bubby[c]) update_bubb(c);
+setTimeout("bubble()", 40);
+}
+
+function update_bubb(i) {
+if (bubby[i]) {
+bubby[i]-=bubbs[i]/2+i%2;
+bubbx[i]+=(i%5-2)/5;
+if (bubby[i]>0 && bubbx[i]>0 && bubbx[i]<swide) {
+if (Math.random()<bubbs[i]/shigh*2 && bubbs[i]++<8) {
+bubb[i].width=bubbs[i]+"px";
+bubb[i].height=bubbs[i]+"px";
+}
+bubb[i].top=bubby[i]+"px";
+bubb[i].left=bubbx[i]+"px";
+}
+else {
+bubb[i].visibility="hidden";
+bubby[i]=0;
+return;
+}
+}
+}
+
+window.onresize=set_width;
+function set_width() {
+var sw_min=999999;
+var sh_min=999999;
+if (document.documentElement && document.documentElement.clientWidth) {
+if (document.documentElement.clientWidth>0) sw_min=document.documentElement.clientWidth;
+if (document.documentElement.clientHeight>0) sh_min=document.documentElement.clientHeight;
+}
+if (typeof(self.innerWidth)=='number' && self.innerWidth) {
+if (self.innerWidth>0 && self.innerWidth<sw_min) sw_min=self.innerWidth;
+if (self.innerHeight>0 && self.innerHeight<sh_min) sh_min=self.innerHeight;
+}
+if (document.body.clientWidth) {
+if (document.body.clientWidth>0 && document.body.clientWidth<sw_min) sw_min=document.body.clientWidth;
+if (document.body.clientHeight>0 && document.body.clientHeight<sh_min) sh_min=document.body.clientHeight;
+}
+if (sw_min==999999 || sh_min==999999) {
+sw_min=800;
+sh_min=600;
+}
+swide=sw_min;
+shigh=sh_min;
+}
+
+function createDiv(height, width) {
+var div=document.createElement("div");
+div.style.position="absolute";
+div.style.height=height;
+div.style.width=width;
+div.style.overflow="hidden";
+div.style.backgroundColor="transparent";
+return (div);
+}
+// ]]>
+</script>
+
+<script>
+
+// Mouseover/ Click sound effect- by JavaScript Kit (www.javascriptkit.com)
+// Visit JavaScript Kit at http://www.javascriptkit.com/ for full source code
+
+//** Usage: Instantiate script by calling: var uniquevar=createsoundbite("soundfile1", "fallbackfile2", "fallebacksound3", etc)
+//** Call: uniquevar.playclip() to play sound
+
+var html5_audiotypes={ //define list of audio file extensions and their associated audio types. Add to it if your specified audio file isn't on this list:
+"mp3": "audio/mpeg",
+"mp4": "audio/mp4",
+"ogg": "audio/ogg",
+"wav": "audio/wav"
+}
+
+function createsoundbite(sound){
+var html5audio=document.createElement('audio')
+if (html5audio.canPlayType){ //check support for HTML5 audio
+for (var i=0; i<arguments.length; i++){
+var sourceel=document.createElement('source')
+sourceel.setAttribute('src', arguments[i])
+if (arguments[i].match(/\.(\w+)$/i))
+sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
+html5audio.appendChild(sourceel)
+}
+html5audio.load()
+html5audio.playclip=function(){
+html5audio.pause()
+html5audio.currentTime=0
+html5audio.play()
+}
+return html5audio
+}
+else{
+return {playclip:function(){throw new Error("Your browser doesn't support HTML5 audio unfortunately")}}
+}
+}
+
+//Initialize two sound clips with 1 fallback file each:
+
+var mouseoversound=createsoundbite("https://a.tumblr.com/tumblr_ojrn7aGBii1w2e2oyo1.mp3")
+var clicksound=createsoundbite("https://a.tumblr.com/tumblr_ojrmy55yUN1w2e2oyo1.mp3")
+
+</script>
+
+
+<script language=JavaScript>
+<!--
+
+//Disable right mouse click Script
+//By Maximus (maximus@nsimail.com) w/ mods by DynamicDrive
+//For full source code, visit http://www.dynamicdrive.com
+
+var message="ib crditem <3";
+
+///////////////////////////////////
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+}
+}
+
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+
+document.oncontextmenu=new Function("alert(message);return false")
+
+// -->
+</script>
